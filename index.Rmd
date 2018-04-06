@@ -32,8 +32,51 @@ C[come closer]-->B")
 ```
 
 ```{r simulation}
+Treatment<-c(rep("Control", 50), rep("Intervention", 50))
+
+#Generate a random set of values that are normally distributed
+rand1<-rnorm(n=1000, mean=50, sd=10)
+rand2<-rnorm(n=1000, mean=100, sd=10)
+
+Measurements<-sample(rand1, length(Treatment))
+
+dat<-data.frame(Treatment, Measurements)
+glimpse(dat)
+
+
+#let's query the data in different ways
+dat%>%
+  group_by(Treatment)%>%
+  summarise(sample_size=length(Measurements))
+
+#let's model
+mod1<-aov(Measurements~Treatment, data=dat)
+summary(mod1)
+
+dat$Measurements2<-c(sample(rand1, 50), sample(rand2, 50))
+dat
+
+mod2<-aov(Measurements2~Treatment, data=dat)
+summary(mod2)
+
+
+```
+
+```{r Making maps}
+
+map()
+
+```
+
+```{r querying data}
+length(unique(samp.dat$SpeciesID)) #What are the number of unique species IDed?
+
+samp.dat%>%
+  filter(Lat>30)
+```
+
+
+
 
 
 =======
-  d. Grab Andrew's data and mess with it. tkgrf,vfvf
->>>>>>> 904e3e93892e182391706cdb1a631fae05816b75:index.Rmd
