@@ -10,4 +10,4 @@ Agenda 4/6/18:
   b. Data simulation and check ANOVA
     i. graph the results
   c. Making a map of the United States
-  d. Grab Andrew's data and mess with it. 
+  d. Grab Andrew's data and mess with it. tkgrf,vfvf
