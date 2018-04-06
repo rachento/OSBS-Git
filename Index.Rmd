@@ -1,0 +1,13 @@
+---
+title: "OSBS Git"
+output: html_document
+---
+Agenda 4/6/18:
+
+1. Reviewed GitHub and file structure
+2. Going through a series of R demos
+  a. Diagrammer: draw your own workflows
+  b. Data simulation and check ANOVA
+    i. graph the results
+  c. Making a map of the United States
+  d. Grab Andrew's data and mess with it. 
