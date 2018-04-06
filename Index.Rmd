@@ -10,4 +10,26 @@ Agenda 4/6/18:
   b. Data simulation and check ANOVA
     i. graph the results
   c. Making a map of the United States
-  d. Grab Andrew's data and mess with it. tkgrf,vfvf
+  d. Grab Andrew's data and mess with it. 
+  
+```{r load pkgs}
+library(DiagrammeR)
+library(ggplot2)
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(maps)
+library(mapdata)
+```
+
+ 
+```{r Diagrammer demo}
+mermaid(" 
+graph TD 
+ A[Make dataset]-->B[Run statistics]
+C[come closer]-->B")
+```
+
+```{r simulation}
+
+
